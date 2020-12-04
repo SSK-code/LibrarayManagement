@@ -1,0 +1,2 @@
+# LibrarayManagement
+A Book Library needs a REST API to be created. The library has a few books and some subscribers. Every time a subscriber walks in to the Library, the Librarian will check the list of Books for availability of copies. Once a Subscriber picks a book a subscription entry will be made by the Librarian to record it.
