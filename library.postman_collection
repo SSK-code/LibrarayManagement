@@ -1,0 +1,288 @@
+{
+	"id": "69a6b782-1fc2-491f-a440-b1f19ce22173",
+	"name": "training",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"a88b6017-04ab-4e5e-b7df-4a76a6f3404e",
+		"ea00bcb9-c6fe-40fd-b53e-bcfe010dec8e",
+		"07b29c84-479b-4f73-b1a8-83bc287a9faa",
+		"e2046ba0-feed-4233-85c4-de1594451752",
+		"cf7aa7df-9f3c-4c03-93a1-2c2c332d5009",
+		"0f481859-d657-4cc0-8071-d2a9e4ebe805"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "07b29c84-479b-4f73-b1a8-83bc287a9faa",
+			"name": "Post Books",
+			"url": "http://localhost:8082/books",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "password123"
+					},
+					{
+						"key": "username",
+						"value": "admin"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "[\r\n    {\r\n        \"bookId\": \"B1001\",\r\n        \"bookName\": \"In Search of Lost Time\",\r\n        \"authorName\": \"Marcel Proust\",\r\n        \"availableCopies\": 10,\r\n        \"totalCopies\": 10\r\n    },\r\n        {\r\n        \"bookId\": \"B1002\",\r\n        \"bookName\": \"The Glass Hotel\",\r\n        \"authorName\": \"John Mandel\",\r\n        \"availableCopies\": 1,\r\n        \"totalCopies\": 1\r\n    },\r\n        {\r\n        \"bookId\": \"B1003\",\r\n        \"bookName\": \"The Vanishing Half\",\r\n        \"authorName\": \"Brit Bennett\",\r\n        \"availableCopies\": 2,\r\n        \"totalCopies\": 2\r\n    }\r\n]",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0f481859-d657-4cc0-8071-d2a9e4ebe805",
+			"name": "Post Return",
+			"url": "http://localhost:8082/return",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "password123"
+					},
+					{
+						"key": "username",
+						"value": "admin"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n    \"bookId\": \"B1002\",\r\n    \"subscriberName\": \"Rahman\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a88b6017-04ab-4e5e-b7df-4a76a6f3404e",
+			"name": "Get Subscriptions",
+			"url": "http://localhost:8085/subscriptions",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "password123"
+					},
+					{
+						"key": "username",
+						"value": "admin"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cf7aa7df-9f3c-4c03-93a1-2c2c332d5009",
+			"name": "Get Books",
+			"url": "http://localhost:8082/books",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "password123"
+					},
+					{
+						"key": "username",
+						"value": "admin"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e2046ba0-feed-4233-85c4-de1594451752",
+			"name": "Get Subscriptions",
+			"url": "http://localhost:8082/subscriptions",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "password123"
+					},
+					{
+						"key": "username",
+						"value": "admin"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ea00bcb9-c6fe-40fd-b53e-bcfe010dec8e",
+			"name": "Post Subscription",
+			"url": "http://localhost:8082/subscription",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "password123"
+					},
+					{
+						"key": "username",
+						"value": "admin"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n    \"bookId\": \"B1002\",\r\n    \"subscriberName\": \"Rahman\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
